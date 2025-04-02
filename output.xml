@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-01T12:08:22.387222" rpa="false" schemaversion="5">
+<suite id="s1" name="Gofore" source="D:\robotti\gofore.robot">
+<test id="s1-t1" name="Testien teko" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-01T12:08:23.009257" level="INFO">Opening browser 'chrome' to base url 'https://www.kotikokki.net'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-01T12:08:23.008960" elapsed="5.166436"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-01T12:08:28.177042" elapsed="0.061990"/>
+</kw>
+<kw name="Hakukentän tiedon haku">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-01T12:08:28.240671" elapsed="0.032986"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@id='recipe-search-free-text']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-01T12:08:28.274037" elapsed="0.065677"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-01T12:08:28.340261" level="INFO">Typing text 'Makaronilaatikko' into text field '//input[@id='recipe-search-free-text']'.</msg>
+<msg time="2025-04-01T12:08:28.792780" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-01T12:08:28.793099" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D67D4C25+3179557]
+	(No symbol) [0x00007FF6D64388A0]
+	(No symbol) [0x00007FF6D62C8FFC]
+	(No symbol) [0x00007FF6D6319274]
+	(No symbol) [0x00007FF6D63172BC]
+	(No symbol) [0x00007FF6D6347C2A]
+	(No symbol) [0x00007FF6D63122D6]
+	(No symbol) [0x00007FF6D6347E40]
+	(No symbol) [0x00007FF6D63702F3]
+	(No symbol) [0x00007FF6D6347A03]
+	(No symbol) [0x00007FF6D63106D0]
+	(No symbol) [0x00007FF6D6311983]
+	GetHandleVerifier [0x00007FF6D68367CD+3579853]
+	GetHandleVerifier [0x00007FF6D684D1D2+3672530]
+	GetHandleVerifier [0x00007FF6D6842153+3627347]
+	GetHandleVerifier [0x00007FF6D65A092A+868650]
+	(No symbol) [0x00007FF6D6442FFF]
+	(No symbol) [0x00007FF6D643F4A4]
+	(No symbol) [0x00007FF6D643F646]
+	(No symbol) [0x00007FF6D642EAA9]
+	BaseThreadInitThunk [0x00007FFF5A4A7374+20]
+	RtlUserThreadStart [0x00007FFF5C45CC91+33]
+</msg>
+<arg>//input[@id='recipe-search-free-text']</arg>
+<arg>Makaronilaatikko</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-01T12:08:28.339931" elapsed="0.495244">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D67D4C25+3179557]
+	(No symbol) [0x00007FF6D64388A0]
+	(No symbol) [0x00007FF6D62C8FFC]
+	(No symbol) [0x00007FF6D6319274]
+	(No symbol) [0x00007FF6D63172BC]
+	(No symbol) [0x00007FF6D6347C2A]
+	(No symbol) [0x00007FF6D63122D6]
+	(No symbol) [0x00007FF6D6347E40]
+	(No symbol) [0x00007FF6D63702F3]
+	(No symbol) [0x00007FF6D6347A03]
+	(No symbol) [0x00007FF6D63106D0]
+	(No symbol) [0x00007FF6D6311983]
+	GetHandleVerifier [0x00007FF6D68367CD+3579853]
+	GetHandleVerifier [0x00007FF6D684D1D2+3672530]
+	GetHandleVerifier [0x00007FF6D6842153+3627347]
+	GetHandleVerifier [0x00007FF6D65A092A+868650]
+	(No symbol) [0x00007FF6D6442FFF]
+	(No symbol) [0x00007FF6D643F4A4]
+	(No symbol) [0x00007FF6D643F646]
+	(No symbol) [0x00007FF6D642EAA9]
+	BaseThreadInitThunk [0x00007FFF5A4A7374+20]
+	RtlUserThreadStart [0x00007FFF5C45CC91+33]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>haku</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-04-01T12:08:28.835442" elapsed="0.000063"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//button[@id='recipe-search-free-text-submit']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-01T12:08:28.835658" elapsed="0.000047"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@id='recipe-search-free-text-submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-01T12:08:28.835801" elapsed="0.000028"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-01T12:08:28.835928" elapsed="0.000031"/>
+</kw>
+<status status="FAIL" start="2025-04-01T12:08:28.239950" elapsed="0.596171">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D67D4C25+3179557]
+	(No symbol) [0x00007FF6D64388A0]
+	(No symbol) [0x00007FF6D62C8FFC]
+	(No symbol) [0x00007FF6D6319274]
+	(No symbol) [0x00007FF6D63172BC]
+	(No symbol) [0x00007FF6D6347C2A]
+	(No symbol) [0x00007FF6D63122D6]
+	(No symbol) [0x00007FF6D6347E40]
+	(No symbol) [0x00007FF6D63702F3]
+	(No symbol) [0x00007FF6D6347A03]
+	(No symbol) [0x00007FF6D63106D0]
+	(No symbol) [0x00007FF6D6311983]
+	GetHandleVerifier [0x00007FF6D68367CD+3579853]
+	GetHandleVerifier [0x00007FF6D684D1D2+3672530]
+	GetHandleVerifier [0x00007FF6D6842153+3627347]
+	GetHandleVerifier [0x00007FF6D65A092A+868650]
+	(No symbol) [0x00007FF6D6442FFF]
+	(No symbol) [0x00007FF6D643F4A4]
+	(No symbol) [0x00007FF6D643F646]
+	(No symbol) [0x00007FF6D642EAA9]
+	BaseThreadInitThunk [0x00007FFF5A4A7374+20]
+	RtlUserThreadStart [0x00007FFF5C45CC91+33]
+</status>
+</kw>
+<status status="FAIL" start="2025-04-01T12:08:23.007784" elapsed="5.828866">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D67D4C25+3179557]
+	(No symbol) [0x00007FF6D64388A0]
+	(No symbol) [0x00007FF6D62C8FFC]
+	(No symbol) [0x00007FF6D6319274]
+	(No symbol) [0x00007FF6D63172BC]
+	(No symbol) [0x00007FF6D6347C2A]
+	(No symbol) [0x00007FF6D63122D6]
+	(No symbol) [0x00007FF6D6347E40]
+	(No symbol) [0x00007FF6D63702F3]
+	(No symbol) [0x00007FF6D6347A03]
+	(No symbol) [0x00007FF6D63106D0]
+	(No symbol) [0x00007FF6D6311983]
+	GetHandleVerifier [0x00007FF6D68367CD+3579853]
+	GetHandleVerifier [0x00007FF6D684D1D2+3672530]
+	GetHandleVerifier [0x00007FF6D6842153+3627347]
+	GetHandleVerifier [0x00007FF6D65A092A+868650]
+	(No symbol) [0x00007FF6D6442FFF]
+	(No symbol) [0x00007FF6D643F4A4]
+	(No symbol) [0x00007FF6D643F646]
+	(No symbol) [0x00007FF6D642EAA9]
+	BaseThreadInitThunk [0x00007FFF5A4A7374+20]
+	RtlUserThreadStart [0x00007FFF5C45CC91+33]
+</status>
+</test>
+<status status="FAIL" start="2025-04-01T12:08:22.390111" elapsed="6.453169"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Gofore" id="s1" pass="0" fail="1" skip="0">Gofore</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
